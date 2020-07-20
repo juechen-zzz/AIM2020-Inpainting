@@ -161,7 +161,7 @@ SAMPLE_SIZE            | 12    | number of images to sample on each samling inte
 If you find this repository useful, please cite:
 
 ```bash
-@misc{AIM2020RealSR,
+@misc{AIM2020Inpainting,
   author = {Haopeng Ni},
   title = {AIM2020-Inpainting},
   year = {2020},
