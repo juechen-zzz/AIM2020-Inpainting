@@ -13,10 +13,6 @@ The solution is based on https://github.com/knazeri/edge-connect/tree/master/src
 - NVIDIA GPU + CUDA cuDNN
 
 ## Installation
-- Download code from Google Drive:
-```bash
-cd MSEC
-```
 - Install PyTorch and dependencies from http://pytorch.org
 - Install python requirements:
 ```bash
