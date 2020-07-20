@@ -62,7 +62,7 @@ We already set all the parameters and test data as default. If you only want to 
 python test.py
 ```
 
-The test result will be saved in ./MESC/result.
+The test result will be saved in ./result.
 
 ## Getting Started
 
