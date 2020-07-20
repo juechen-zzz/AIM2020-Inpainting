@@ -23,17 +23,6 @@ cd MSEC
 pip install -r requirements.txt
 ```
 
-### Quick Test
-
-​		We already set all the parameters and test data as default. If you only want to **test the AIM2020 Inpainting Track 1**. Run:
-
-```bash
-cd ./MESC
-python test.py
-```
-
-​		The test result will be saved in ./MESC/result.
-
 ## Datasets
 
 ### 1) Images
@@ -64,6 +53,16 @@ python ./scripts/split.py --data_dir path_to_ADE20K_test_set
 	python ./scripts/flist.py --path path_to_test_img --output ./datasets/test_img.flist
 	python ./scripts/flist.py --path path_to_test_mask --output ./datasets/test_mask.flist
 	```
+
+### Quick Test
+
+We already set all the parameters and test data as default. If you only want to **test the AIM2020 Inpainting Track 1**. Run:
+
+```bash
+python test.py
+```
+
+The test result will be saved in ./MESC/result.
 
 ## Getting Started
 
@@ -141,8 +140,8 @@ LR                     | 0.0001| learning rate
 D2G_LR                 | 0.1   | discriminator/generator learning rate ratio
 BETA1                  | 0.0   | adam optimizer beta1
 BETA2                  | 0.9   | adam optimizer beta2
-BATCH_SIZE             | 8     | input batch size 
-INPUT_SIZE             | 256   | input image size for training. (0 for original size)
+BATCH_SIZE             | 2    | input batch size 
+INPUT_SIZE             | 512 | input image size for training. (0 for original size)
 SIGMA                  | 2     | standard deviation of the Gaussian filter used in Canny edge detector </br>(0: random, -1: no edge)
 MAX_ITERS              | 2e6   | maximum number of iterations to train the model
 EDGE_THRESHOLD         | 0.5   | edge detection threshold (0-1)
